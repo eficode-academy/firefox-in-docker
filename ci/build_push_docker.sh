@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-set -x
-
 REPOSITORY="ghcr.io/eficode-academy/find"
 GIT_TAG=$(git rev-parse HEAD)
 TAG="release"
@@ -15,7 +13,7 @@ docker build -t "$IMAGE" .
 
 echo "Tagging image ..."
 
-docker tag "$IMGAE" "$RELEASE_IMAGE"
+docker tag "$IMAGE" "$RELEASE_IMAGE"
 
 echo "Pushing image ..."
 

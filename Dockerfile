@@ -1,4 +1,4 @@
-FROM python:3.10-slim
+FROM python:3.10.5-slim-bullseye
 
 # make sure apt doesn't sit and wait for input
 ENV DEBIAN_FRONTEND=noninteractive
