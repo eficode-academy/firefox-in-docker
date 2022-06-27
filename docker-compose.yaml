@@ -2,5 +2,6 @@ version: "3"
 services:
   firefox-in-docker:
     build: .
+    image: ghcr.io/eficode-academy/find:release
     ports:
       - 80:10000
