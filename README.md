@@ -18,7 +18,7 @@ There are ready to use docker images available in the [ghcr.io](https://github.c
 Using `docker run`
 
 ```sh
-docker run --rm -d -p 80:10000 --restart always ghcr.io/eficode-academy/find:release
+docker run -d -p 80:10000 --restart always ghcr.io/eficode-academy/find:release
 ```
 
 Using `docker-compose`
@@ -31,13 +31,13 @@ docker-compose up -d
 
 You can access the firefox instance from a browser on port 80 either using `localhost` from the same machine, ie:
 
-```http
+```
 http://localhost:80
 ```
 
 If you are at a training and using a provided cloud machine, you should use the DNS name of your cloud machine:
 
-```http
+```
 http://inst<your-number>.<trainer-initials>.eficode.academy:80
 ```
 
